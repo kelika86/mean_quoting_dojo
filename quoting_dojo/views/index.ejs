@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <fieldset>
+    <h1>Welcome to Quoting Dojo</h1>
+    <form action='/quotes' method='POST'>
+    <p>Your Name:<input type="text" name="name"></p>
+    <p>Your Quote:<textarea name="quote" rows="8" cols="50"></textarea></p>
+    <p><input type="submit" value="Add my quote!"></p>
+    </form>
+    <a href='/quotes'><button>Skip to Quotes!</button> <!--never put the 'get' route inside the form since the method is post -->
+    </fieldset>
+</body>
+</html>
